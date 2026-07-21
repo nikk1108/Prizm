@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #FAFAFA;
+    --background-secondary: #F6F6F4;
+    --card: #FFFFFF;
+    --text-primary: #1F2328;
+    --text-secondary: #656D76;
+    --border: #D8DEE4;
+    --accent: #B56A3C;
+    --accent-hover: #9A5630;
+    --accent-pressed: #874A27;
+    --success: #3D8B5A;
+    --warning: #D97706;
+    --danger: #C62828;
+  }
+
+  .dark {
+    --background: #0F1113;
+    --background-secondary: #161A1D;
+    --card: #20252A;
+    --text-primary: #F3F4F6;
+    --text-secondary: #A7ADB5;
+    --border: #32383F;
+    --accent: #D08755;
+    --accent-hover: #B56A3C;
+    --accent-pressed: #9A5630;
+    --success: #3D8B5A;
+    --warning: #D97706;
+    --danger: #C62828;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-sans antialiased transition-colors duration-150;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Serif', Georgia, serif;
+  }
+  
+  ::selection {
+    background-color: rgba(181, 106, 60, 0.2);
+  }
+
+  .dark ::selection {
+    background-color: rgba(208, 135, 85, 0.2);
+  }
+}
+
+/* Custom scrollbars matching warm editorial style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}

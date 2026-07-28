@@ -1,5 +1,7 @@
 {
   "name": "prizm",
+  "version": "1.0.0",
   "private": true,
-  "version": "1.0.0"
+  "description": "Prizm - A collaborative platform for research, technology, learning, and knowledge sharing.",
+  "license": "MIT"
 }

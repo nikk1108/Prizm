@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Award, Search, Github, ExternalLink, Layers } from 'lucide-react';
+import { Award, Search, ExternalLink, Layers } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import api from '../services/api';
 import type { Post, Field } from '../types';
 import PostCard from '../components/features/PostCard';
@@ -197,7 +198,7 @@ export const ProjectShowcase: React.FC = () => {
                           rel="noopener noreferrer"
                           className="inline-flex items-center space-x-1 font-semibold text-text-primary hover:text-accent"
                         >
-                          <Github className="h-3.5 w-3.5" />
+                          <FaGithub className="h-3.5 w-3.5" />
                           <span>Code Repo</span>
                         </a>
                       )}

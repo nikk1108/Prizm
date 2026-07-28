@@ -6,6 +6,7 @@ import {
   Sparkles, ExternalLink, Star, X, MoreVertical, Edit2, Trash2, Copy,
   BarChart2, Share2, Link as LinkIcon, Flag
 } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import api from '../services/api';
 import type { Post, Comment } from '../types';
 import { useAuth } from '../context/AuthContext';
@@ -670,7 +671,7 @@ export const PostDetail: React.FC = () => {
                     rel="noreferrer"
                     className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-md border border-border hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-medium transition-colors"
                   >
-                    <Github className="h-4 w-4" />
+                    <FaGithub className="h-4 w-4" />
                     <span>Source Repository</span>
                   </a>
                 )}

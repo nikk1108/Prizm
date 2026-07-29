@@ -51,13 +51,15 @@ app.use((req, res, next) => {
   req.params = mongoSanitize(req.params);
   next();
 });
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://prizm-3ymkhhvqa-nikk1108s-projects.vercel.app"
+];
 
-// 3. CORS Configuration
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: allowedOrigins,
   credentials: true
 }));
-
 // 4. Performance Middlewares
 app.use(compression());
 

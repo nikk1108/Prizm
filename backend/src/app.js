@@ -53,7 +53,7 @@ app.use((req, res, next) => {
 });
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://prizm-3ymkhhvqa-nikk1108s-projects.vercel.app"
+  "https://prizm-snowy.vercel.app"
 ];
 
 app.use(cors({
